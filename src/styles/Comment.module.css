@@ -1,0 +1,52 @@
+.Container {
+  width: 80dvw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.AvatarContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  line-height: 0;
+  gap: 5px;
+}
+.AvatarImg {
+  width: 50px;
+  height: 50px;
+}
+.Name {
+  color: #4d13d1;
+}
+.Rate {
+  color: #585858;
+}
+.BtnViewProfile {
+  color: #4d13d1;
+  font-weight: bold;
+  margin-left: 20px;
+  transition: ease 0.2s all;
+}
+.BtnViewProfile:hover {
+  color: #6a3ecf;
+}
+/* Responsive styles */
+/* Mobile */
+@media (max-width: 700px) {
+  .Container {
+    flex-direction: column;
+    row-gap: 30px;
+  }
+  .Container div {
+    width: 100%;
+  }
+  .BtnViewProfile {
+    margin: 0;
+  }
+}

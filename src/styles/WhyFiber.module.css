@@ -1,0 +1,51 @@
+.Container {
+  width: 80dvw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 0 2%;
+  gap: 20px;
+}
+.WhyFiber {
+  color: #4d13d1;
+}
+.itemContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.item {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+}
+.item div {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0;
+}
+.IconImg {
+  width: 30px;
+  height: 30px;
+}
+.Description {
+  color: #585858;
+}
+/* Responsive styles */
+/* Mobile */
+@media (max-width: 700px) {
+  .itemContainer {
+    flex-direction: column;
+  }
+  .item {
+    width: 100%;
+  }
+  .item div {
+    flex-direction: row;
+    align-items: center;
+    gap: 15px;
+  }
+}

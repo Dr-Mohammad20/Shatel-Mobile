@@ -1,0 +1,126 @@
+.Container {
+  width: 80dvw;
+  height: 80dvh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 2%;
+  margin-top: -10rem;
+}
+
+.Container div {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+/* Left Side styles */
+.leftBannerContainer {
+  width: 55%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.RateContainer {
+  display: flex;
+  justify-content: flex-start !important;
+}
+.starContainer {
+  display: flex;
+  flex-direction: row;
+  width: fit-content;
+  width: 80px !important;
+}
+.RateText {
+  text-align: left;
+}
+.StarImg {
+  width: 15px;
+  height: 15px;
+}
+.BtnContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.BtnExamples {
+  color: #4d13d1;
+  font-weight: bold;
+  margin: 20px;
+  text-decoration: underline;
+  transition: ease 0.2s all;
+}
+.BtnExamples:hover {
+  color: #6a3ecf;
+}
+.BtnFreeTrial {
+  color: white;
+  background-color: #4d13d1;
+  font-weight: bold;
+  margin: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+.BtnFreeTrial:hover {
+  background-color: #6a3ecf;
+}
+.CheckImg {
+  width: 20px;
+  height: 20px;
+}
+.CheckText {
+  color: #585858;
+  opacity: 0.8;
+  margin-left: 5px;
+}
+/* Right side styles */
+.rightBannerContainer {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.BannerImg {
+  width: 90%;
+  height: 90%;
+  z-index: 998;
+  margin: auto;
+}
+/* Responsive styles */
+/* Mobile */
+@media (max-width: 700px) {
+  .Container {
+    margin-top: -6rem;
+    padding: 0;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  .BannerImg {
+    width: 100%;
+    height: 80%;
+  }
+  .BtnContainer {
+    justify-content: space-evenly !important;
+  }
+  .BtnFreeTrial {
+    padding: 10px;
+  }
+}
+
+/* Tablet and Smaller Desktop */
+@media (min-width: 701px) and (max-width: 1120px) {
+  .BannerImg {
+    width: 100%;
+    height: 70%;
+  }
+}
+@media (min-width: 701px) and (max-width: 850px) {
+  .BtnContainer {
+    flex-direction: column !important;
+  }
+}

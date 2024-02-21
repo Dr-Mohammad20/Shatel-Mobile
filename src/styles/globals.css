@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+li a {
+  color: white;
+  transition: ease 0.2s all;
+}
+li a:hover {
+  color: black;
+}
